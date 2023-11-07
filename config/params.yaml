@@ -1,0 +1,14 @@
+rossealfs:
+    ros__parameters:
+       mountpoint: "/tmp/rossealfs"
+       categories: ["explainability", "all"]
+       files: ["/explainability.log", "/all.log"]
+       types: ["rcl_interfaces/msg/Log", "rcl_interfaces/msg/Log"]
+
+sealfs:
+    ros__parameters:
+        sealfs_path: "/opt/sealfs"
+       backpoint: "/tmp/backsealfs"
+       size: 1000000
+       keys_path: "/tmp/keys"
+       nratchet: 5120
