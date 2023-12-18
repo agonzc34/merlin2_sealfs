@@ -14,7 +14,7 @@ class MinimalPublisher(Node):
 
     def timer_callback(self):
         msg = String()
-        msg.data = 'Hello World: %d' % self.i
+        msg.data = ('Hello World: %d' % self.i) * 50
         self.get_logger().info('Publishing: "%s"' % msg.data)
         self.i += 1
 
