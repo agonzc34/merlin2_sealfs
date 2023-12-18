@@ -1,6 +1,6 @@
 #!/bin/bash
-echo 'Bye bye'
-echo $SEALFS_MOUNTPOINT
-mkdir prueba
+sudo umount /tmp/rossealfs
+sudo rmmod sealfs
+# rm -rf /tmp/backsealfs /tmp/keys /tmp/rossealfs
 
 exit 0

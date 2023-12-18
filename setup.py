@@ -25,7 +25,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'remapper = merlin2_sealfs.sealfs_remapper:main'
+            'remapper = merlin2_sealfs.sealfs_remapper:main',
+            'plan = merlin2_sealfs.prueba:main',
+            'talker = merlin2_sealfs.talker:main'
         ],
     },
 )
